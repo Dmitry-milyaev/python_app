@@ -5,7 +5,7 @@ router = APIRouter()
 
 @router.get('/')
 def get_info():
-    url= 'http://127.0.0.1:8001/get_info'
+    url= 'http://gate:8000/get_info'
     response = requests.get(url)
     result = response.text.split("z")
     i = len(result)
